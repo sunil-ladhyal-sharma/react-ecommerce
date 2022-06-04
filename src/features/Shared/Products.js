@@ -19,7 +19,7 @@ function Products(props) {
 <>
   <Modal  product={props.items} modalId={ModalId}/>
 
-<div  className='card col-md-3 col-sm-12, col-xs-12' id={id} data-bs-toggle="modal" type="button"  data-bs-target={customModalId} onClick={()=> setDesc(description) }>
+<div  className='card col-md-3 col-sm-12 col-xs-12 m-3' id={id} data-bs-toggle="modal" type="button"  data-bs-target={customModalId} onClick={()=> setDesc(description) }>
   <img src={image} className="card-img-top image-size" alt="..." />
   <div className="card-body">
     <h5 className="card-title">{title}</h5>

@@ -1,5 +1,6 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+// import './feature/CSS/feature.css';
 // import { Counter } from './features/counter/Counter';
 import Home from './features/Home.js/Home';
 

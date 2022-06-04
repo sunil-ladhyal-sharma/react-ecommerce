@@ -28,6 +28,8 @@
   color: #61dafb;
 }
 
+@import './features/SCSS/feature';
+
 .Footer {
   position: absolute;
   bottom: 0px;
@@ -52,7 +54,14 @@
   height: 300px;
   object-fit: contain;
 }
+
 .navigation-sticky{
   position:sticky !important;
   top: 20px;
 }
+
+// .navbar-logo {
+//   border: 1px solid;
+//   border-radius: 28px;
+//   padding: 10px;
+// }

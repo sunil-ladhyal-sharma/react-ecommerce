@@ -27,11 +27,12 @@ function Home() {
       <div>
         <Navigation />
       </div>
-      <div className="row">
-         
+      <div className="container-fluid">
+      
+         <div className="row justify-content-center">
           {allProduct.map((itm) => (
             //    <li id={itm.id}>{itm.id}</li>
-              <Products key={itm.id} items={itm} />
+              <Products key={itm.id} items={itm} className=" d-flex py-5" />
             //   console.log(itm);
           ))}
           {/* ///{allProduct} */}
@@ -42,6 +43,8 @@ function Home() {
         }     */}
 {/* <Products items={allProduct} /> */}
       
+      </div>
+  
       </div>
       <div className="Footer">
         <Footer />
