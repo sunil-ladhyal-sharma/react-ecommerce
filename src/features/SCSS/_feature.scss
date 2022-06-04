@@ -4,3 +4,16 @@
     padding: 10px;
     font-size: 1.2rem;
 }
+
+.navbar {
+    position: fixed !important;
+    /* display: flex !important; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    z-index: 1;
+    padding-bottom: .5rem;
+    width: 100vw;
+    margin-bottom: 3rem;
+}
