@@ -10,6 +10,7 @@ function Navigation() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse px-2" id="navbarSupportedContent">
+        <div className="col-md-6 col xs-12 col-sm-12">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
              <NavLink  to="/">Home</NavLink>
@@ -17,6 +18,7 @@ function Navigation() {
           <li className="nav-item">
             {/* <NavLink to="/services" className="nav-NavLink" >Services</NavLink> */}
           </li>
+          
           <li  className="nav-item dropdown">
             {/* <NavLink to="/about" className="nav-NavLink dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> */}
               {/* About Us */}
@@ -32,6 +34,11 @@ function Navigation() {
             {/* <NavLink className="nav-NavLink disabled"   aria-disabled="true">Disabled</NavLink> */}
           </li>
         </ul>
+        </div>
+        <div className="col-md-4 col-sm-12 col-xs-12">
+        <NavLink  to="/cart"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></NavLink>
+        
+        </div>
         <form className="d-flex">
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
           <button className="btn btn-outline-success" type="submit">Search</button>

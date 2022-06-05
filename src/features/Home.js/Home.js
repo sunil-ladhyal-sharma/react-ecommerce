@@ -13,9 +13,9 @@ function Home() {
 
   useEffect(() => {
     product().then((data) => {
-      console.log(data);
+      // console.log(data);
       setProduct(data);
-      console.log(allProduct);
+      // console.log(allProduct);
     });
     // console.log(getAllProduct());
   }, []);

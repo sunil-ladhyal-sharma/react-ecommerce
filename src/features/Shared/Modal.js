@@ -4,7 +4,7 @@ function Modal(props) {
     // const [mdesc, smdesc] = useState();
     // console.log("Modal",props)
    
-    const  {id, title, description, image} = props.product
+    const  {title, description, image} = props.product
   
     // useEffect(()=>{
     //     if(desc !== ""){

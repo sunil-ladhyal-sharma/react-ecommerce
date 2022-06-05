@@ -7,11 +7,13 @@ import'bootstrap/dist/css/bootstrap.min.css';
 // import $ from'jquery';
 // import Popper from'popper.js';
 import'bootstrap/dist/js/bootstrap.bundle.min';
+import 'font-awesome/css/font-awesome.min.css';
 import {store} from './store/store'
 import { Provider } from 'react-redux'
 import { BrowserRouter, Routes, Route  } from 'react-router-dom';
 import Service from './features/Service/Service';
 import About from './features/About/About';
+import Cart from './features/Cart/Cart';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,6 +25,7 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="/service" element={<Service />} />
         <Route path="/about" element={<About />} />
+        <Route path="/cart" element={<Cart />} />
     </Routes>
   </BrowserRouter>
 
