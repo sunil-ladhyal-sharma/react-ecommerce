@@ -1,7 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { useSelector } from "react-redux";
+
 
 function Navigation() {
+  const cartItems = useSelector((state) => state.cart.value);
+  console.log("Cart Component", cartItems);
+  const cartItem = cartItems === 0 ? "" : cartItems.split(";;");
+  const [cartItemCount, setCartItemCount] = useState([]);
+
+  useEffect(() => {
+    setCartItemCount(cartItem.length);
+    console.log(cartItem.length)
+  }, [cartItem]);
   return (
     <div><nav className="navbar navbar-expand-lg navbar-light bg-light">
     <div className="container-fluid">
@@ -10,10 +21,10 @@ function Navigation() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse px-2" id="navbarSupportedContent">
-        <div className="col-md-6 col xs-12 col-sm-12">
+        <div className="col-md-6 col xs-10 col-sm-10">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-             <NavLink  to="/">Home</NavLink>
+             <NavLink  to="/"><i className="fa fa-home menu-icon fa-2x" aria-hidden="true"></i></NavLink>
           </li>
           <li className="nav-item">
             {/* <NavLink to="/services" className="nav-NavLink" >Services</NavLink> */}
@@ -35,14 +46,16 @@ function Navigation() {
           </li>
         </ul>
         </div>
-        <div className="col-md-4 col-sm-12 col-xs-12">
-        <NavLink  to="/cart"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></NavLink>
-        
+        <div className="col-md-2 col-sm-2 col-xs-2">
+          <span className="cart-item-count">{cartItemCount === 0?cartItemCount:cartItemCount - 1}</span>
+        <NavLink  to="/cart"><i className="fa fa-shopping-cart menu-icon fa-2x" aria-hidden="true"></i></NavLink>
         </div>
+        <div className="col-md-4 col-sm-12 col-xs-12">
         <form className="d-flex">
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
           <button className="btn btn-outline-success" type="submit">Search</button>
         </form>
+        </div>
       </div>
     </div>
   </nav></div>

@@ -20,7 +20,7 @@ function Products(props) {
 <>
   <Modal  product={props.items} modalId={ModalId}/>
 
-<div  className='card col-md-3 col-sm-12 col-xs-12 m-3' id={id} data-bs-toggle="modal" type="button"  data-bs-target={customModalId} >
+<div  className='card col-md-3 col-sm-12 col-xs-12 m-3'>
   <img src={image} className="card-img-top image-size" alt="..." />
   <div className="card-body">
     <h5 className="card-title">{title}</h5>
@@ -28,8 +28,12 @@ function Products(props) {
     {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
   </div>
   <div className="row">
-    <div className="col-md-12 col-sm-12 col-xs-12">
+    <div className="col-md-6 col-sm-6 col-xs-6">
       <Cart cartItem={props.items}/>
+    </div>
+    <div className="col-md-6">
+
+      <button id={id} data-bs-toggle="modal" className='btn' type="button"  data-bs-target={customModalId}>View Details</button>
     </div>
   </div>
 </div>

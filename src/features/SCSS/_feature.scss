@@ -17,6 +17,45 @@
     width: 100vw;
     margin-bottom: 3rem;
 }
-.fa-shopping-cart {
+.menu-icon {
     cursor: pointer;
+    color: black;
+}
+
+.cart-item-count{
+    position: relative;
+    background: white;
+    border: solid 1px black;
+    padding: 2px 7px;
+    border-radius: 20px;
+    opacity: 0.7;
+    font-size: 13px;
+    left: 47px;
+    top: -15px;
+}
+
+.fa-spinner{
+    font-size:8rem;
+    position: relative;
+    top: 30%;
+}
+
+.spinner-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    font-size: 6rem;
+    background: white;
+    opacity: 0.5;
+    color: black;
+    bottom: 0px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
