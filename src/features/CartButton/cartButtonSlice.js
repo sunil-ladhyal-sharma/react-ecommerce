@@ -13,9 +13,9 @@ export const cartSlice = createSlice({
       addToCart: (state, action) => {
         
         /* Store the cart data in json stringify format so that in cart component we can reterive value. */
-        console.log("action payload", action.payload)
+        //console.log("action payload", action.payload)
         state.value += ";;"+JSON.stringify(action.payload);
-        console.log("state value : ",state.value)
+        //console.log("state value : ",state.value)
         /* Retrieve data from the store. */
        
       },

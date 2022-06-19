@@ -5,13 +5,13 @@ import { useSelector } from "react-redux";
 
 function Navigation() {
   const cartItems = useSelector((state) => state.cart.value);
-  console.log("Cart Component", cartItems);
+  //console.log("Cart Component", cartItems);
   const cartItem = cartItems === 0 ? "" : cartItems.split(";;");
   const [cartItemCount, setCartItemCount] = useState([]);
 
   useEffect(() => {
     setCartItemCount(cartItem.length);
-    console.log(cartItem.length)
+    //console.log(cartItem.length)
   }, [cartItem]);
   return (
     <div><nav className="navbar navbar-expand-lg navbar-light bg-light">

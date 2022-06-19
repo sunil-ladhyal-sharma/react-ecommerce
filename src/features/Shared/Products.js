@@ -3,7 +3,7 @@ import Cart from '../CartButton/CartButton';
 import Modal from './Modal';
 
 function Products(props) {
-    console.log("product",props.items);
+    //console.log("product",props.items);
     // const [Des, setDesc] = useState("");
     // const [pr, setPr] = useState();
     // const itme = props.items;
@@ -11,7 +11,7 @@ function Products(props) {
     // useEffect(() => {
     //   setPr(props.values)
     // },[])
-    // console.log(pr)
+    // //console.log(pr)
     const  {id, title, description, image} = props.items
     const customModalId = '#CSCZ'+id;   
     const ModalId = 'CSCZ'+id;   

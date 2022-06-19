@@ -26,8 +26,8 @@ function Cart() {
     setCart(cartItem);
   }, []);
 
-  console.log(cartItem);
-  console.log("Cart Component", cartItems);
+  //console.log(cartItem);
+  //console.log("Cart Component", cartItems);
   return (
     <>
      <center><Spinner hide={hide} /></center> 
@@ -43,7 +43,7 @@ function Cart() {
           <div className="row">
             {cart.map((item, i) =>
               i > 0 ? (
-                <div className="card p-5 my-3" key={JSON.parse(item).id}>
+                <div className="card p-5 my-3" key={i}>
                   <div className="row">
                     <div className="col-md-4">
                       <img
